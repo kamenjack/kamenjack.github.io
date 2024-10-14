@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title> | BAT CAVE</title>
+    <title>Categories: issue | BAT CAVE</title>
     <meta name="author" content="卡面" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -37,10 +37,6 @@
 
 
 <script src="/js/lib/preview.js"></script>
-
-
-
-
 
 
 
@@ -154,35 +150,63 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div class="article">
-    <div>
-        <h1></h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/10/14
+            <div id="archives">
+    
+    <div class="categories-tags">
+        
+        
+        
+        <span>
+            <a href="/categories/issue/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                issue
+            </a>
         </span>
         
         
+        
+        
     </div>
     
-    <div class="content" v-pre>
-        <p>##test</p>
-
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2024/10/10</div>
+            <a href="/2024/10/10/test/">
+                <h3>评论问题</h3>
+            </a>
+            <div class="info">
+                
+                <span class="category">
+                    <a href="/categories/issue/">
+                        <span class="icon">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </span>
+                        issue
+                    </a>
+                </span>
+                
+                
+                <span class="tags">
+                    <span class="icon">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </span>
+                    
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/issue/" style="color: #00bcd4">
+                            issue
+                        </a>
+                    </span>
+                    
+                </span>
+                
+            </div>
+        </div>
     </div>
-    
-    
-    
-    
-    <div id="comment">
-        <div id="giscus-container" class="giscus"></div>
-    </div>
-    
-    
-    
     
 </div>
 
@@ -214,29 +238,6 @@
         
     </div>
     <script src="/js/main.js"></script>
-    
-    
-<script
-    src="https://giscus.app/client.js"
-    data-repo=""
-    data-repo-id=""
-    data-category=""
-    data-category-id=""
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="preferred_color_scheme"
-    data-lang=""
-    crossorigin
-    async
-></script>
-
-
-
-
-
     
 </body>
 </html>

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | BAT CAVE</title>
+    <title>评论问题 | BAT CAVE</title>
     <meta name="author" content="卡面" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -37,6 +37,10 @@
 
 
 <script src="/js/lib/preview.js"></script>
+
+
+
+
 
 
 
@@ -150,50 +154,60 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            
-<div id="archives">
-    
-    <div id="timeline-wrap" ref="timeline">
+            <div class="article">
+    <div>
+        <h1>评论问题</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/10/10
+        </span>
         
-        <div class="timeline" data-title="评论问题">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/10/10</div>
-                <a href="/2024/10/10/test/">
-                    <h3>评论问题</h3>
+        <span class="category">
+            <a href="/categories/issue/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                issue
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/issue/" style="color: #00a596">
+                    issue
                 </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/issue/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            issue
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/issue/" style="color: #00bcd4">
-                                issue
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+            </span>
+            
+        </span>
         
     </div>
+    
+    <div class="content" v-pre>
+        <h3 id="giscus-bug"><a href="#giscus-bug" class="headerlink" title="giscus bug"></a>giscus bug</h3><p>giscus评论区有时候好像刷新不出来，多刷新几次应该就出来了。<br>可能是网的问题，大概。</p>
+
+    </div>
+    
+    
+    
+    
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    
+    
+    
+    
 </div>
 
             <footer id="footer">
@@ -224,6 +238,29 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+<script
+    src="https://giscus.app/client.js"
+    data-repo=""
+    data-repo-id=""
+    data-category=""
+    data-category-id=""
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang=""
+    crossorigin
+    async
+></script>
+
+
+
+
+
     
 </body>
 </html>
